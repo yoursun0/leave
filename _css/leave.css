@@ -1,0 +1,81 @@
+.status_box div {
+	font-size: 14px;
+}
+.status_box div span{
+	display: inline-block;
+	border: 1px solid #000000;
+	width: 80px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+}
+
+.status-99{
+	background-color: #dddddd;
+}
+
+.status-1{
+	background-color: #ff9999;
+}
+
+.status0{
+	background-color: #ffffff;
+}
+
+.status10{
+	background-color: #ffff99;
+}
+
+.status20{
+	background-color: #ffcc99;
+}
+
+.status30{
+	background-color: #ff9900;
+}
+
+.status40{
+	background-color: #ccffff;
+}
+
+.status50{
+	background-color: #a5c9ff;
+}
+
+.status100{
+	background-color: #7396ff;
+}
+
+.nDay{
+	color: #000000;	
+}
+.hDay{
+	color: #ff0000;
+}
+.phDay{
+	color: #0000ff;
+}
+
+.leaveItem {
+	cursor: pointer;
+}
+.selectedLeave td{
+	background-color: #F7BE77;
+}
+.attSpan {
+	white-space: nowrap;
+}
+.attSpan img {
+	border: 0;
+	margin: 0 !important;
+	vertical-align: middle;
+}
+.lockIcon{
+	width: 16px;
+	height: 16px;
+	border: 0;
+	margin: 0 !important;
+	vertical-align: middle;
+}

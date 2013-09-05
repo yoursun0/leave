@@ -1,0 +1,155 @@
+body {
+	background-color: #FFFFFF;
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+td {
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+th {
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+a:link{
+	color:#0000CC;
+	text-decoration: none;
+}
+a:visited{
+	color:#0000CC;
+	text-decoration: none;
+}
+a:hover{
+	color:#0000CC;
+	text-decoration: underline;
+}
+input {
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+select {
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+textarea {
+	overflow: visible;
+	width: 500px;
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+.functionList {
+	list-style-image: url(../images/function_bullet.gif);
+	line-height: 25px;
+	vertical-align: middle;
+}
+
+.functionLink:link {
+	color: #000099;
+	text-decoration: none;
+}
+.functionLink:visited {
+	color: #000099;
+	text-decoration: none;
+}
+.functionLink:hover {
+	color: #ff0000;
+	text-decoration: underline;
+}
+
+.helpLink:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.helpLink:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.helpLink:hover {
+	color: #FFFF00;
+	text-decoration: underline;
+}
+
+.tabTableBody{
+	background-color: #ECF0F6;
+}
+
+.errMsg {
+	font-family: "Arial";
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.errMsgSm {
+	font-family: "Arial";
+	font-size: 11px;
+	font-weight: normal;
+	color: #FF0000;
+}
+
+.warnMsg {
+	font-family: "Arial";
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.bgalt_color0{
+	background-color: #FFFFFF;
+}
+.bgalt_color1{
+	background-color: #cccccc;
+}
+
+.surveyTitle {
+	text-align: center;
+	font-family: "Arial";
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.surveySubtitle {
+	text-align: center;
+	font-family: "Arial";
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.surveyPage {
+	text-align: right;
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+
+.addInfo {
+	font-family: "Arial";
+	font-size: 12px;
+	color: #000000;
+}
+
+.choiceCat{
+	font-weight: bold;
+}
+
+.reqQuestion{
+	font-family: "Arial";
+	font-size: 12px;
+}
+
+.invit_pass{
+  color: #006600;
+}
+.invit_dupe{
+  color: #660099;
+}
+.invit_miss{
+  color: #FF0000;
+}
+

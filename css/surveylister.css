@@ -1,0 +1,159 @@
+/*
+* File Name : dirlister.css
+* Version : 1.1
+* Release Date : 05/05/2008
+*
+* By : Simon Pottier
+* Right : http://creativecommons.org/licenses/by-nd/2.0/be/
+* Site : www.guistalk.com
+*/
+
+/* @group DEFAULT SKIN */
+
+#dirtreepath {
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-size: 12px;
+	height: 18px;
+	background: url(./icons/house.png) no-repeat;
+	text-indent: 20px;
+	line-height: 18px;
+}
+
+.dirtree {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	display: none;
+	overflow: hidden; /* IE SUX */
+}
+
+.dirtree li {
+	padding-left: 20px;
+	white-space: nowrap;
+	line-height: 18px;
+}
+
+.dirtree .highlight {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.dirtree a {
+	text-decoration: none;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-style: none;
+	display: block;
+	height: 18px;
+}
+
+.dirtree a:hover {
+	background-color: #e5e5e5;
+}
+
+.dirtree span {
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.dirtree .title {
+	float: left;
+	color: black;
+}
+
+.dirtree .size {
+	color: #3f3f3f;
+	float: right;
+}
+
+.dirtree .date {
+	color: #3f3f3f;
+	float: right;
+	margin-left: 20px;
+}
+
+/* @end */
+
+/* @group DEFAULT ICONS */
+
+.dirtree .close { background: url(./icons/folder.png) no-repeat; }
+.dirtree .open { background: url(./icons/folder_open.png) no-repeat; }
+.dirtree .file { background: url(./icons/page_white.png) no-repeat; }
+.dirtree .wait { background: url(./icons/spinner.gif) no-repeat; }
+
+/* @end */
+
+/* @group EXTENSIONS */
+
+/* @group IMAGES */
+
+.dirtree .jpg, .dirtree .jpeg, .dirtree .gif, .dirtree .png, .filtree .bmp { background: url(./icons/picture.png) no-repeat; }
+.dirtree .psd, .dirtree .tiff { background: url(./icons/photo.png) no-repeat; }
+.dirtree .pdf { background: url(./icons/page_white_acrobat.png) no-repeat; }
+
+/* @end */
+
+/* @group MOVIES */
+
+.dirtree .mp4, .dirtree .avi, .dirtree .mov, .dirtree .mpg, .dirtree .mpeg, .dirtree .wmv, .dirtree .divx, .dirtree .ogm { background: url(./icons/film.png) no-repeat; }
+
+/* @end */
+
+/* @group MUSICS */
+
+.dirtree .m4p { background: url(./icons/music.png) no-repeat; }
+.dirtree .mp3 { background: url(./icons/music.png) no-repeat; }
+.dirtree .ogg { background: url(./icons/music.png) no-repeat; }
+.dirtree .wav { background: url(./icons/music.png) no-repeat; }
+
+/* @end */
+
+/* @group CODES */
+
+.dirtree .asp, .dirtree .aspx, .dirtree .c, .dirtree .cfm, .dirtree .cgi, .dirtree .cpp, .dirtree .h, .dirtree .vb, .dirtree .xml { background: url(./icons/page_white_code.png) no-repeat; }
+
+/* @group RUBY */
+
+.dirtree .rb, .dirtree .rbx, .dirtree .rhtml, .dirtree .ruby { background: url(./icons/page_white_ruby.png) no-repeat; }
+
+/* @end */
+
+/* @group FLASH */
+
+.dirtree .fla, .dirtree .swf, .dirtree .as { background: url(./icons/page_white_flash.png) no-repeat; }
+.dirtree .as { background: url(./icons/page_white_actionscript.png) no-repeat; }
+
+/* @end */
+
+.dirtree .htm, .dirtree .html { background: url(./icons/page_white_world.png) no-repeat; }
+.dirtree .sql { background: url(./icons/page_white_database.png) no-repeat; }
+.dirtree .css { background: url(./icons/css.png) no-repeat; }
+.dirtree .php { background: url(./icons/page_white_php.png) no-repeat; }
+
+/* @end */
+
+/* @group TEXTES */
+.dirtree .txt, .dirtree .rtf { background: url(./icons/txt.png) no-repeat; }
+
+/* @end */
+
+/* @group ARCHIVES */
+
+.dirtree .zip, .dirtree .rar, .dirtree .tar, .dirtree .gz, .dirtree .bz2 { background: url(./icons/page_white_zip.png) no-repeat; }
+
+/* @end */
+
+/* @group OFFICE */
+
+.dirtree .xls {  background: url(./icons/page_white_excel.png) no-repeat; }
+.dirtree .ppt { background: url(./icons/page_white_powerpoint.png) no-repeat; }
+.dirtree .doc { background: url(./icons/page_white_word.png) no-repeat; }
+
+.dirtree .10 { background: url(./icons/cati.png) no-repeat; }
+.dirtree .20 { background: url(./icons/public_link.png) no-repeat; }
+.dirtree .30 { background: url(./icons/public.png) no-repeat; }
+
+/* @end */
+
+/* @end */

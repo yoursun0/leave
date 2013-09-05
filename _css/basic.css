@@ -1,0 +1,536 @@
+/* BASIC CSS */
+body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+	font-size: 12px;
+}
+
+fieldset {
+    border: 1px solid #E0E0E0;
+    width: 0%;
+    padding: 0px 6px 6px 6px;
+    padding: 6px !important;
+    margin-bottom: 6px;
+    position: relative;
+    display: block;
+}
+
+fieldset legend {
+    color: #0002DF;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 12px;
+    padding-bottom: 6px !important;
+    margin: 0 !important;
+}
+
+table {
+    border: 0;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0;
+}
+
+td, th, pre, input, select, textarea, button {
+    font-family: Arial;
+    font-size: 12px;
+}
+.debug{
+	font-family:"Courier New";
+	font-size:12px;
+	color:blue;
+}
+
+button .Submit {
+    font-family: Tahoma;
+}
+
+hr {
+    border: 1px solid #999;
+    background-color: #999;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+a:link, a:visited {
+    color: #000080;
+}
+
+a:hover {
+    color: #0066FF;
+}
+/* Layout */
+.module_top_right, .module_top_left {
+    width: 6px;
+    background-image: url(../_img/Module/bg_menu.png);
+}
+
+.module_mid_left, .module_mid_right, .module_mid_bottom {
+    background-color: #fff;
+}
+/* Pages Title */
+.pages_title {
+    height: 28px;
+    margin-bottom: 6px;
+}
+
+.pages_title_l {
+    background: url(../_img/msg-bg-l.PNG);
+    width: 5px;
+}
+
+.pages_title_c {
+    background: url(../_img/msg-bg-c.PNG);
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0C5F00;
+}
+
+.pages_title_r {
+    background: url(../_img/msg-bg-r.PNG);
+    width: 5px;
+}
+/**
+ * Simple Table
+ */
+.SimpleTable {
+    border: 1px solid #999;
+    width: 100%;
+}
+
+.SimpleTable .Center td {
+    text-align: center;
+}
+
+.SimpleTable .Header, .SimpleTable .Caption, .SimpleTable .RowHeader, .SimpleTable .ColumnHeader{
+    vertical-align: top;
+    background-color: #eee;
+    text-align: left;	
+}
+
+.SimpleTable .Header {
+    font-size: 14px;
+}
+
+.SimpleTable .RowHeader {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.SimpleTable .ColumnHeader {
+    text-align: center;
+    font-weight: bold;
+}
+
+.SimpleTable th {
+    padding: 2px;
+    border: 1px solid #999;
+    background-color: #eee;
+}
+
+.SimpleTable thead th {
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+}
+
+.SimpleTable tr td {
+    padding: 2px;
+    border: 1px solid #999
+}
+/**
+ * Input Form
+ */
+.InputForm {
+    border: 0px;
+}
+
+.InputForm th {
+    vertical-align: top;
+    text-align: left;
+}
+
+.InputForm td {
+    vertical-align: top;
+    text-align: left;
+    margin: 0px;
+    padding: 3px;
+}
+
+.InputForm .Header {
+    vertical-align: top;
+    text-align: left;
+    font-size: 14px;
+    padding: 3px;
+    padding-left: 5px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.InputForm .Caption {
+    padding: 6px 8px 5px 10px;
+    font-weight: bold;
+    font-family: Tahoma;
+    vertical-align: top;
+    text-align: left;
+}
+
+.InputForm .Space {
+    padding: 0px;
+}
+
+.InputForm .Error {
+    background-color: #fcc;
+}
+
+.MarkupRequired {
+    position: inherit;
+    /*
+     font-style:italic;
+     */
+    color: red;
+}
+/* Option Bar */
+.p_optionbar, .p_optionbar table{
+    background-image: url(../_img/monthpicker/bg.png);
+}
+.p_optionbar table {
+    height: 24px;
+    font-family: "Arial Black";
+    font-weight: bold;
+}
+.p_optionbar td {
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+}
+.p_optionbar .caption {
+    padding-left: 20px;
+    padding-right:5px;
+    color: #ffe;
+}
+.p_optionbar .content input, .p_optionbar .content select {
+    font-family: "Arial";
+    font-weight: bold;
+    border: 0;
+    font-size: 12px;
+}
+/**
+ * Month Picker
+ */
+.monthpicker {
+    background-image: url(../_img/monthpicker/bg.png);
+}
+
+.monthpicker table {
+    font-family: "Arial Black";
+    font-weight: bold;
+    background-image: url(../_img/monthpicker/bg.png);
+}
+
+.monthpicker input {
+    border: 0;
+    text-align: center;
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+.monthpicker td {
+    height: 20px;
+    padding: 2px;
+    text-align: center;
+}
+
+.monthpicker .caption {
+    padding-left: 20px;
+    color: #ffe;
+}
+
+.monthpicker .year {
+    font-size: 16px;
+    cursor: pointer;
+    width: 24px;
+}
+
+.monthpicker .month {
+    cursor: pointer;
+    width: 30px;
+}
+
+.monthpicker .quarter {
+    cursor: pointer;
+    width: 60px;
+}
+
+.monthpicker .selected {
+    background-image: url(../_img/monthpicker/selected.png);
+    color: #fff;
+}
+
+.monthpicker .hover {
+    background-image: url(../_img/monthpicker/over.png);
+    color: #fff;
+}
+/* CSS Button - slim */
+.titleBar .slim_btn {
+    background-color: #F5F5F5;
+    padding: 3px !important;
+    padding: 3px;
+    font-size: 13px;
+    margin-top: 1px;
+    border: 1px solid #F5F5F5;
+}
+
+.titleBar .slim_btn:hover {
+    background-color: #eee;
+    border: 1px solid #E0E0E0;
+}
+.titleBar .slim_btn img{
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px;
+    border: 0;
+}
+
+a.slim_btn {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    height: 16px;
+    line-height: 14px;
+    border: 1px solid #FFCA6F;
+    margin-top: 0px !important;
+    margin-top: -1px;
+    padding: 0px !important;
+    padding: 1px;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 11px;
+    color: #3F3F3F;
+    background-color: #FFF9EF;
+}
+
+a.slim_btn:visited, link {
+    color: #3F3F3F;
+}
+
+a.slim_btn:hover {
+    background-color: #FFCA6F;
+}
+
+a.slim_btn img {
+    vertical-align: middle;
+    margin: 0px 0px 0px 0px !important;
+    margin: -2px 0px 0px -1px;
+    border: 0;
+}
+
+/* Icon Button */
+a.icon_btn img {
+	border:0 none;
+	margin:0 !important;
+	vertical-align:middle;
+}
+
+a.icon_btn {
+	cursor:pointer;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	line-height:14px;
+}
+/* jQuery plugin - Table Sorter v2.0 */
+.tablesorter {
+    text-align: left;
+    font-size: 12px;
+}
+.tablesorter th, .tablesorter td {
+    border: 1px solid #999;
+}
+.tablesorter th{
+    background-color: #e6EEEE;
+	padding:4px;
+}
+.tablesorter .subtotal{
+	font-weight:bold;
+	color:blue;
+	text-align:center;
+}
+.tablesorter .center{
+	text-align:center;
+}
+.tablesorter tfoot td {
+    background-color: #CDCDCD;
+}
+.tablesorter tbody th {
+    padding: 1px 2px 1px 2px !important;
+    padding: 2px 2px 1px 2px;
+}
+
+.tablesorter thead tr .header {
+    background: #e6EEEE url("../_img/tablesorter.bg.gif") center right no-repeat;
+    cursor: pointer;
+}
+.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}
+.tablesorter thead tr .headerSortUp {
+    background-image: url("../_img/tablesorter.asc.gif");
+}
+.tablesorter thead tr .headerSortDown {
+    background-image: url("../_img/tablesorter.desc.gif");
+}
+.tablesorter tbody td {
+    color: #3D3D3D;
+    padding: 1px 2px 1px 2px !important;
+    padding: 2px 2px 1px 2px;
+    vertical-align: middle;
+}
+.tablesorter tbody tr {
+    background-color: #fff;
+}
+
+.tablesorter tbody tr.odd {
+    background-color: #f6f6f6;
+}
+
+.tablesorter tbody tr.holiday {
+    background-color: #FEFF7F;
+}
+
+.tablesorter tbody tr.selected{
+    background-color: #FFE25F;
+}
+
+.tablesorter tbody tr.over {
+    background-color: #bcd4ec;
+}
+
+.tablesorter tbody tr.hand {
+    cursor: pointer;
+}
+
+.tablesorter tbody tr.error {
+    background-color: #fcc;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------
+ * toggleElements.css - Stylesheet for jQuery-Plugin toggleElements
+ * ----------------------------------------------------------------------------
+ */
+
+/* Screen ------------------------------------------------------------------- */
+
+@media projection, screen {
+
+	/* Toggler - default style */
+	.toggler {
+	   	margin:6px 0 6px 0;
+		cursor:pointer;
+		text-decoration: none;
+		font-size: 16px;
+		font-weight:bold;
+		line-height:32px;
+		display: block;
+	}
+	.toggler-closed,.toggler-opened{
+		color:#333;
+		padding-right:30px;
+		padding-left:16px;
+		height:30px;
+		border:solid 1px #E0E0E0;
+		border-bottom:0;		
+	}
+	.toggler-closed {
+		border: solid 1px #E0E0E0;
+		background: #F5F5F5 url(../_img/jq.toggleElements/togglerc.gif) center right no-repeat;
+	}
+	.toggler-closed:hover {
+		color: #000;
+		background: #ccc url(../_img/jq.toggleElements/togglerch.gif) center right no-repeat;
+	}
+	.toggler-opened {
+		background: #F5F5F5 url(../_img/jq.toggleElements/togglero.gif) center right no-repeat;
+	}
+	.toggler-opened:hover {
+		color: #000;
+		background: #ccc url(../_img/jq.toggleElements/toggleroh.gif) center right no-repeat;
+	}
+
+	/* Container - default style */
+	.toggler-c {
+	}
+	.toggler-c-closed, .toggler-c-opened{
+		border:solid 1px #E0E0E0;
+		border-top:0;
+		margin:-6px 0 6px 0;
+		padding:3px;
+		background:#fff;
+	}
+
+}
+
+/* Print -------------------------------------------------------------------- */
+@media print {
+/*
+	.toggler-c { margin-bottom:25px; }
+	.toggler { display: none; }
+*/
+
+}
+
+
+/* Function Button */
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ececec;
+    border: 1px solid #2e8bff;
+    padding: 2px;
+    padding-right: 4px;
+}
+
+.btn:hover {
+    background-color: #8de1a7;
+}
+
+.hidden {
+    display: none;
+}
+
+.Error {
+    background-color: #fcc;
+}

@@ -1,0 +1,151 @@
+/* jQuery plugin - Table Sorter v2.0 */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	font-size: 12px;
+	text-align: left;
+}
+table.tablesorter th {
+	border:1px solid #999;
+}
+table.tablesorter td {
+	border:1px solid #999;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	padding: 4px;
+	font-size: 12px;
+}
+table.tablesorter thead tr .header {
+	background-image: url("../_img/tablesorter.bg.gif");
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url("../_img/tablesorter.asc.gif");
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url("../_img/tablesorter.desc.gif");
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+	background-color: #8dbdd8;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 1px 2px 1px 2px !important;
+	padding: 2px 2px 1px 2px;
+	background-color: #FFF;
+	vertical-align:middle;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#f6f6f6;
+}
+table.tablesorter tbody tr.over td {
+  background:#bcd4ec;
+}
+table.tablesorter tbody tr.hand {
+	cursor:pointer;
+}
+
+/* Form Table */
+.FormTable thead th {
+	padding:3px;
+	text-align:center;
+	vertical-align:middle;
+	font-weight:bold;
+}
+.FormTable tbody th {
+	padding:2px;
+	padding-top:4px;
+	text-align:left;
+	vertical-align:top;
+	font-weight:bold;
+}
+.FormTable tbody td {
+	padding:2px;
+}
+/* Function Button */
+.btn{
+	font-size:12px;
+	font-weight:bold;
+	background-color:#ececec;
+	border:1px solid #2e8bff;
+	padding:2px;
+	padding-right:4px;
+}
+.btn:hover{
+	background-color:#8de1a7;
+}
+	
+
+
+/* Data Table */
+.DataTable{
+	border: 0px;
+	border-collapse: collapse;
+	border-left-width: 1px;
+	padding-top:2px;
+	padding-left:1px;
+}
+.DataTable thead .arrow{
+	OVERFLOW: hidden;
+	COLOR: black;
+	FONT-FAMILY: webdings;
+}
+.DataTable thead td{
+	border:1px solid;
+	padding-top:3px;
+	padding-left: 2px;
+  	background:buttonface;
+	border-color:buttonshadow;
+}
+.DataTable thead th{
+	border:1px solid;
+	padding-top:3px;
+	padding-left: 2px;
+  	background:buttonface;
+	border-color:buttonshadow;
+}
+.DataTable tbody td{
+	border:1px solid buttonshadow;
+	padding:1px;
+	padding-top:2px;
+	padding-left: 2px;
+}
+.DataTable tbody th{
+	border:1px solid;
+	padding-top:3px;
+	padding-left: 2px;
+  	background:buttonface;
+	border-color:buttonshadow;
+}
+/* Values List */
+.ValuesListValue {
+	text-align : center;
+}
+/* Info Table */
+.InfoTable{
+	empty-cells:show;
+	margin:0px;
+	padding:0px;
+}
+.InfoTable thead tr{
+	background-color:#98cb7f;
+	border-bottom:1px solid rgb(221, 221, 221);
+}
+.InfoTable thead th{
+	text-align:left;
+	padding-left:10px;
+	border-bottom:1px solid rgb(221, 221, 221);
+}
+.InfoTable tbody th{
+	text-align:left;
+	padding-left:10px;
+	border-bottom:1px solid rgb(221, 221, 221);
+}
+.InfoTable tbody td{
+	text-align:left;
+	padding-left:10px;
+	border-bottom:1px solid rgb(221, 221, 221);
+}

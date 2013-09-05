@@ -1,0 +1,54 @@
+.ui-accordion {
+    width: 120px;
+	font-weight:bold;
+}
+.ui-accordion div {
+    background-color: #ddd;
+}
+.ui-accordion a {
+    cursor: pointer;
+    display: block;
+    padding: 6px;
+    margin-top: 0;
+    color: black;
+/*
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #999;
+*/
+    background-image: url(../_img/jq.ui-accordion/AccordionTab0.gif);
+}
+.ui-accordion a:hover {
+    background-image: url(../_img/jq.ui-accordion/AccordionTab2.gif);
+}
+.ui-accordion a.selected {
+    background-image: url(../_img/jq.ui-accordion/AccordionTab2.gif);
+}
+.ui-accordion li.selected{
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	background-color: #fff;
+	font-size:14px;
+	color:#0C5F00;
+}
+.ui-accordion li.over{
+	background-color: #ccc;
+}
+
+.LeftMenu{
+	margin-left:0px;
+	padding-left:0px;
+}
+.LeftMenu li{
+	padding:5px 0px 5px 0px;
+	vertical-align:middle;
+	text-align:center;
+	width:100%;
+	cursor:pointer;
+}
+
+@media print {
+	.ui-accordion div {
+        display: block !important;
+        height: auto !important
+	}
+}
