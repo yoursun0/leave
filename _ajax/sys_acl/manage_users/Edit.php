@@ -4,7 +4,7 @@ $fs = array("user_name","user_login","dept_id","user_type","user_status","email"
 F::GetSubmit($fs);
 
 if ($oper == "add") {
-	$Insert = new InsertSQL(&$DB,"ac_users");
+	$Insert = new InsertSQL($DB,"ac_users");
 	foreach ($fs as $f) {
 		$Insert->Str($f,$$f);
 	}
@@ -12,7 +12,7 @@ if ($oper == "add") {
 	$Insert->Execute();
 
 } else if ($oper == "edit") {
-	$Update = new UpdateSQL(&$DB,"ac_users","user_id",$id);
+	$Update = new UpdateSQL($DB,"ac_users","user_id",$id);
 	foreach ($fs as $f) {
 		$Update->Str($f,$$f);
 	}

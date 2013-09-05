@@ -1,5 +1,5 @@
-<?	require_once("_ajax/leave/common.php"); ?>
-<?
+<?php	require_once("_ajax/leave/common.php"); ?>
+<?php
 	F::GetSubmit(array("date", 'search_department_id',"search_user_id", "search_group"));
 ?>
 <table id="mainTable" class="tablesorter" width="100%">

@@ -53,7 +53,7 @@ $rs  = $DB->GetArray($sql);
 
 $sql = "SELECT mod_id,mod_name
 		FROM ac_modules ";
-$MODULES = Sql::ToArray($sql,2,&$DB);
+$MODULES = Sql::ToArray($sql,2,$DB);
 
 
 // constructing a JSON

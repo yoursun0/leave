@@ -5,7 +5,7 @@ Forms::GetPostGetValues($fs);
 
 
 if ($oper == "add") {
-	$Insert = new InsertSQL(&$DB,"ac_modules");
+	$Insert = new InsertSQL($DB,"ac_modules");
 	foreach ($fs as $f) {
 		$Insert->AddStr($$f,$f);
 	}

@@ -1,4 +1,4 @@
-<?	require_once("_ajax/leave/common.php"); ?>
+<?php	require_once("_ajax/leave/common.php"); ?>
 <table id="mainTable" class="tablesorter" width="100%">
 <thead>
 <tr>

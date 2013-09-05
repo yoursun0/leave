@@ -1,5 +1,5 @@
-<?	require_once("_ajax/leave/common.php"); ?>
-<?
+<?php	require_once("_ajax/leave/common.php"); ?>
+<?php
 	F::GetSubmit(array("leave_id"));
 
 	$sql = "SELECT o.leave_id, date_format(o.create_time, '%Y-%m-%d<br>%H:%i:%s') as create_time, o.user_name, a.area_name, d.dept_name, o.leave_type, o.leave_period, o.total_day, o.status, o.other_info, o.job_involved, o.remark, o.pl_user_id_1, o.pl_user_id_2, o.pl_name_1, o.pl_name_2"
@@ -73,7 +73,7 @@ echo F::Submit("tb_remove()","Close")." "
 ?>
 <div class='toggle' title='Show Action Log'>
 <table class="InputForm">
-<?
+<?php
 	$sql = "select * from action_log where leave_id='$leave_id' order by log_id";
 	$rows = Q::GetArray($sql);
 	foreach($rows as $row){
@@ -84,7 +84,7 @@ echo F::Submit("tb_remove()","Close")." "
 ?>
 </table>
 </div>
-<?
+<?php
 echo B::Toggle();
 ?>
 <script>

@@ -1,4 +1,4 @@
-<?	require_once("_ajax/leave/common.php"); ?>
+<?php	require_once("_ajax/leave/common.php"); ?>
 <table id="mainTable" class="tablesorter" width="100%">
 <thead>
 <tr>
@@ -13,7 +13,7 @@
 </tr>
 </thead>
 <tbody>
-<?
+<?php
 F::GetSubmit("user_id");
 
 $sql = "select leave_id from approval where status = '1' and (approver_user_id='".$USER->Id."' or request_user_id='".$USER->Id."')";

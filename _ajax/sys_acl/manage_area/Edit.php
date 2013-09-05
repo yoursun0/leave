@@ -5,7 +5,7 @@ Forms::GetPostGetValues($fs);
 
 
 if ($oper == "add") {
-	$Insert = new InsertSQL(&$DB,"area");
+	$Insert = new InsertSQL($DB,"area");
 	foreach ($fs as $f) {
 		$Insert->AddStr($$f,$f);
 	}

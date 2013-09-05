@@ -9,7 +9,7 @@
 
 	function logAction($leave_id, $msg, $logDetails = true){
 		global $DB, $USER;
-		$Insert = new InsertSQL(&$DB,"action_log");
+		$Insert = new InsertSQL($DB,"action_log");
 		$Insert->Clear();
 		$Insert->Now("create_time");
 		$Insert->Str("leave_id", $leave_id);

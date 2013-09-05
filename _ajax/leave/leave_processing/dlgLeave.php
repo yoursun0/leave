@@ -1,5 +1,5 @@
-<?	require_once("_ajax/leave/common.php"); ?>
-<?
+<?php	require_once("_ajax/leave/common.php"); ?>
+<?php
 	F::GetSubmit(array("leave_id"));
 	
 	$sql = "select u.user_id, u.user_name
@@ -102,7 +102,7 @@ echo F::Submit("tb_remove()","Close")." "
 ?>
 <div class='toggle' title='Show Action Log'>
 <table class="InputForm">
-<?
+<?php
 	$sql = "select * from action_log where leave_id='$leave_id' order by log_id";
 	$rows = Q::GetArray($sql);
 	foreach($rows as $row){

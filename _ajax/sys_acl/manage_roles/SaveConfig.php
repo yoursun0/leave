@@ -20,7 +20,7 @@ if($name_count > 0){
 	$DB->Execute($sql);
 
 	if (is_array($ids)) {
-		$Insert = new InsertSQL(&$DB,"ac_roles_pages");
+		$Insert = new InsertSQL($DB,"ac_roles_pages");
 		foreach ($ids as $id) {
 			$Insert->Clear();
 			$Insert->Str("role_id",$role);

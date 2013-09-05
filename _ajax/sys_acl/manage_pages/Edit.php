@@ -5,14 +5,14 @@ Forms::GetPostGetValues($fs);
 
 
 if ($oper == "add") {
-	$Insert = new InsertSQL(&$DB,"ac_pages");
+	$Insert = new InsertSQL($DB,"ac_pages");
 	foreach ($fs as $f) {
 		$Insert->AddStr($$f,$f);
 	}
 	$Insert->Execute();
 
 } else if ($oper == "edit") {
-	$Update = new UpdateSQL(&$DB,"ac_pages","page_id",$id);
+	$Update = new UpdateSQL($DB,"ac_pages","page_id",$id);
 	foreach ($fs as $f) {
 		$Update->Str($f,$$f);
 	}

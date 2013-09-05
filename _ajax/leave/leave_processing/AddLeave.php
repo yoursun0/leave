@@ -1,11 +1,11 @@
-<?	require_once("_ajax/leave/common.php"); ?>
-<?
+<?php	require_once("_ajax/leave/common.php"); ?>
+<?php
 $sql = "select dept_id from ac_users where user_id='".$USER->Id."'";
 $temp_dept_id = $DB->GetOne($sql);
 $sql = "select area_id from ac_dept where dept_id='$temp_dept_id'";
 $temp_area_id = $DB->GetOne($sql);
 
-$Insert = new InsertSQL(&$DB,"leave");
+$Insert = new InsertSQL($DB,"leave");
 $Insert->Clear();
 $Insert->Str("user_id", $USER->Id);
 $Insert->Str("user_name",$USER->Name);
