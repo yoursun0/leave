@@ -1,7 +1,7 @@
 <a>&nbsp;</a>
 <div style="height:300px;overflow:auto;">
 	<ul class="LeftMenu">
-		<?
+		<?php
 			if ($USER->CheckPages("leave","leave_approve") == true){
 				mkModulesLink("leave","Leave Records","leave_approve");
 			} else {
@@ -12,12 +12,8 @@
 		?>
 	</ul>
 </div>
-<!-- a>Page 3</a>		
-<div style="height:300px;overflow:auto;">
-	Page 3
-</div -->
 
-<?
+<?php
 function mkModulesLink($call,$name,$default_page_name = ""){
 	global $USER;
 	if ($USER->CheckModules($call) == true) {

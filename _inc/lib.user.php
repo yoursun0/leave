@@ -20,7 +20,7 @@ class User
 	public function IsAdmin(){
 		return array_key_exists(1,$_SESSION["roles"]);
 	}
-	public function User(&$db = null, &$session = null) {
+	public function User($db = null, $session = null) {
     }
     public function CheckSession($redirect_on_error = true, $redirect_url = "login.php") {
     	if(isset($_SESSION['userid'])){

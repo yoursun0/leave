@@ -2,7 +2,7 @@
 include_once('_database.php');
 include_once('_inc/lib.user.php');
 include_once('_inc/lib.sql.php');
-$USER = new User(&$DB,&$_SESSION);
+$USER = new User($DB,$_SESSION);
 $USER->CheckSession();
 ?>
 <html><head>
@@ -14,7 +14,7 @@ $USER->CheckSession();
 	
 	<title><?=Config::Title?></title>
 </head><body>
-<div id="divPageLoad" style="width: 100%;height: 100%;">
+<div id="divPageLoad" style="width: 100%;height: 100%; display:none;">
 	<span style="position: absolute;top: 40%;left:0;width: 100%;text-align: center;font-weight: bold;font-size: 30px;">Loading ...</span>
 </div>
 <?php flush(); ?>

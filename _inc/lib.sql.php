@@ -1,5 +1,5 @@
 <?php
-set_magic_quotes_runtime(0);
+@set_magic_quotes_runtime(0);
 
 class ADODB_FETCH_MODE{
 	const SYSTEM_DEFAULT = 0;
