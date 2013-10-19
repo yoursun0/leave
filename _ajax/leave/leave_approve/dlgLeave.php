@@ -11,19 +11,22 @@ and r.role_name = 'PL'
 order by u.user_name";
 	$pl_array = Q::ToArray($sql);
 	
-	$sql = "select u.user_id, u.user_name
-from ac_roles r, ac_users_roles ur, ac_users u
-where 
-r.role_id = ur.role_id
-and ur.user_id = u.user_id
-and r.role_name = 'final_approver'
-order by u.user_name";
-	$approver_array = Q::ToArray($sql);
-	
 	$sql = "SELECT o.leave_id, date_format(o.create_time, '%Y-%m-%d<br>%H:%i:%s') as create_time, o.user_name, a.area_name, d.dept_name, o.leave_type, o.leave_period, o.total_day, o.status, o.other_info, o.job_involved, o.remark, o.pl_user_id_1, o.pl_user_id_2, o.pl_name_1, o.pl_name_2"
 ." FROM `leave` o"
 ." join ac_dept d on (o.dept_id = d.dept_id) join ac_area a on (o.area_id = a.area_id) where o.leave_id = '$leave_id'";
 	$row = Q::GetRow($sql);
+
+	$currentUser = $row['user_name'];
+
+    $sql = "select u.user_id, u.user_name
+from ac_roles r, ac_users_roles ur, ac_users u
+where 
+r.role_id = ur.role_id
+and ur.user_id = u.user_id
+and r.role_name = 'approver'
+and u.dept_id in ('1',(select u2.dept_id from ac_users u2 where user_name = '".$currentUser."'))
+order by u.user_name";
+	$approver_array = Q::ToArray($sql);
 	
 	$sql = "SELECT * from `leave_item` where leave_id='$leave_id' order by leave_item_id asc";
 	$leave_item_rows = Q::GetArray($sql);
@@ -106,7 +109,7 @@ echo F::Submit("tb_remove()","Close")." "
 ?>
 <div class='toggle' title='Show Action Log'>
 <table class="InputForm">
-<?
+<?php
 	$sql = "select * from action_log where leave_id='$leave_id' order by log_id";
 	$rows = Q::GetArray($sql);
 	foreach($rows as $row){
@@ -117,7 +120,7 @@ echo F::Submit("tb_remove()","Close")." "
 ?>
 </table>
 </div>
-<?
+<?php
 echo B::Toggle();
 ?>
 <script>
