@@ -23,8 +23,7 @@ from ac_roles r, ac_users_roles ur, ac_users u
 where 
 r.role_id = ur.role_id
 and ur.user_id = u.user_id
-and r.role_name = 'approver'
-and u.dept_id in ('1',(select u2.dept_id from ac_users u2 where user_name = '".$currentUser."'))
+and (r.role_name = 'approver' or r.role_name = 'final_approver')
 order by u.user_name";
 	$approver_array = Q::ToArray($sql);
 
